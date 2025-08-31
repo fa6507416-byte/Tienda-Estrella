@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a Nuestro Sitio</title>
+
+  <!-- Íconos y fuente Montserrat -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      border-bottom: 2px solid rgb(158, 161, 159);
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 3em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f71919;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .quienes-somos {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .quienes-somos h2 {
+      color: #2c3e50;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer a {
+      color: #f1c40f;
+      text-decoration: none;
+    }
+     * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      font-family: sans-serif;
+    }
+
+    .carrusel-container {
+      overflow: hidden;
+      width: 100%;
+      background: white;
+      border-top: 2px solid #ddd;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .carrusel {
+      display: flex;
+      width: max-content;
+      animation: scroll 30s linear infinite;
+    }
+
+    .carrusel img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Duplicamos el contenido para efecto infinito */
+    .carrusel-duplicado {
+      display: flex;
+    }
+
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="estrella blanca.png" alt="Logo de Tienda Estrella Roja" style="max-width: 120px; margin-bottom: 20px;">
+    <h1>Bienvenido a Nuestra Página</h1>
+    <p>Donde la elegancia se une con propós
+    <nav>
+      <ul>
+        <li><a href="inicio1.html">Inicio</a></li>
+        <li><a href="indexDEindex.html">Productos</a></li>
+        <li><a href="categorias.html">Categoría</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+</head>
+<body>
+
+  <div class="carrusel-container">
+    <div class="carrusel">
+      <div class="carrusel-duplicado">
+        <img src="images (13).jpg" alt="Producto 1">
+        <img src="images (1).jpg" alt="Producto 2">
+        <img src="gominolas-3.webp" alt="Producto 3">
+        <img src="images.jpg" alt="Producto 4">
+        <img src="images (12).jpg" alt="Producto 5">
+      </div>
+      <!-- Repetimos los mismos elementos para el loop infinito -->
+      <div class="carrusel-duplicado">
+       <img src="98.webp" alt="Producto 1">
+        <img src="mm-amarillo-caja-24-uds.jpg" alt="Producto 2">
+        <img src="alimentos-de-origen-animal-con-alto-contenido-proteínico-montón-filetes-pescado-crudo-en-un-mercado-fondo-y-textura-fotografía-163251462.jpg" alt="Producto 3">
+        <img src="images (15).jpg" alt="Producto 4">
+        <img src="images (16).jpg" alt="Producto 5">
+      </div>
+    </div>
+  </div>
+
+  <section class="quienes-somos">
+    <h2>👥 ¿Quiénes somos?</h2>
+    <p>En Tienda Estrella Roja, somos más que una tienda: somos parte de tu comunidad. Nacimos con el sueño de acercarte productos esenciales y deliciosos a precios accesibles, sin complicaciones. Nuestro equipo está comprometido con ofrecerte una experiencia de compra fácil, rápida y segura, con productos cuidadosamente seleccionados para ti. Creemos en el trato humano, en la honestidad comercial, y en que una tienda de barrio puede ser también una tienda digital moderna.</p>
+  </section>
+
+  <section class="quienes-somos">
+    <h2>🌟 Visión</h2>
+    <p>Ser la tienda digital de referencia en nuestra comunidad, donde la cercanía, la calidad y la modernidad se unen para transformar la experiencia de compra. Buscamos crecer junto a nuestros clientes, aportando valor a cada hogar y evolucionando constantemente.</p>
+  </section>
+
+  <section class="quienes-somos">
+    <h2>🛒 Misión</h2>
+    <p>Ofrecer productos esenciales, sabrosos y accesibles con atención humana y honesta, integrando tecnología para facilitar una experiencia rápida y segura. En Tienda Estrella Roja, creemos que lo digital puede conservar el alma del barrio y que cada cliente merece sentirse bienvenido.</p>
+  </section>
+
+   <footer>
+  <p>Contáctanos en: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+  <p>Teléfono: +504 9371-9590 Fernando</p>
+  <p>Teléfono: +504 9786-7110 Alejandro</p>
+  <p>Teléfono: +504 9959-2827 Thanly</p>
+
+  <div style="margin: 20px 0;">
+    <a href="https://www.facebook.com/tuempresa" target="_blank" style="background-color: #3b5998; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; margin: 0 10px; display: inline-block;">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+    <a href="https://www.instagram.com/_17nandoo" target="_blank" style="background-color: #E1306C; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; margin: 0 10px; display: inline-block;">
+      <i class="fab fa-instagram"></i> IG:Fernando
+    </a>
+     <a href="https://www.instagram.com/thanly_17" target="_blank" style="background-color: #E1306C; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; margin: 0 10px; display: inline-block;">
+      <i class="fab fa-instagram"></i> IG:Thanly
+    </a>
+     <a href="https://www.instagram.com/ale_g_42" target="_blank" style="background-color: #E1306C; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; margin: 0 10px; display: inline-block;">
+      <i class="fab fa-instagram"></i> IG:Alejandro
+    </a>
+  </div>
+
+  <p>© 2025 Mi Sitio Web - Todos los derechos reservados Fernando,Thanly,Alejandro...</p>
+</footer>
+
+  <!-- JS para el carrusel -->
+  <script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const images = document.getElementById('carouselImages');
+      const total = images.children.length;
+      if (index >= total) currentIndex = 0;
+      else if (index < 0) currentIndex = total - 1;
+      else currentIndex = index;
+      images.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+
+    // Cambiar automáticamente cada 5 segundos
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
+</html>

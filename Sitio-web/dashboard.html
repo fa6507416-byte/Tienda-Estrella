@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel - Tienda Estrella Roja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bienvenido al Panel de Administración</h1>
+
+  <div class="tabla-container">
+    <h2>Clientes</h2>
+    <input type="text" placeholder="Buscar..." class="buscador">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th><th>Nombre</th><th>Email</th><th>Teléfono</th><th>Dirección</th><th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>Ana</td><td>ana@email.com</td><td>123456789</td><td>Av. Centro 123</td>
+          <td><button>Editar</button><button>Eliminar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tabla-container">
+    <h2>Empleados</h2>
+    <input type="text" placeholder="Buscar..." class="buscador">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th><th>Nombre</th><th>Cargo</th><th>Email</th><th>Teléfono</th><th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>Juan</td><td>Vendedor</td><td>juan@email.com</td><td>987654321</td>
+          <td><button>Editar</button><button>Eliminar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tabla-container">
+    <h2>Productos</h2>
+    <input type="text" placeholder="Buscar..." class="buscador">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th><th>Nombre</th><th>Categoría</th><th>Precio</th><th>Stock</th><th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>Camisa Roja</td><td>Ropa</td><td>$25</td><td>50</td>
+          <td><button>Editar</button><button>Eliminar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

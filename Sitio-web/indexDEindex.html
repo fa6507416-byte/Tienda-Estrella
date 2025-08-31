@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pulperia Estrella</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body { padding-top: 70px; }
+    .alert-notify {
+      position: fixed;
+      top: 70px;
+      right: 20px;
+      z-index: 1050;
+      min-width: 250px;
+    }
+    .navbar-brand img {
+      height: 40px;
+      width: auto;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="estrella blanca.png" alt="Logo Tienda Estrella Roja" />
+      Pulperia Estrella
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="inicio1.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="indexDEindex.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="categorias.html">Categorías</a></li>
+        
+      </ul>
+
+      <button class="btn btn-outline-light position-relative" id="btn-carrito" title="Ver carrito">
+        <i class="bi bi-cart-fill fs-4"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="contador">
+          0
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <h2>Productos</h2>
+<section class="productos-grid" id="productos">
+    <div class="producto">
+      <img src="broom-6310388_1280.jpg" alt="Aseo" />
+      <p class="titulo">Escoba</p>
+      <p class="precio">L 150.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="bread-3467243_640.jpg" alt="Comida" />
+      <p class="titulo">Pan </p>
+      <p class="precio">L 5.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto">
+      <img src="1000_F_63360911_XOQYCUyFBQgknw3lzMu8izUxcoNaDkHb.jpg" alt="Golosinas" />
+      <p class="titulo">Malvavisco</p>
+      <p class="precio">L 3.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto">
+      <img src="images (1).jpg" alt="Golosinas" />
+      <p class="titulo">Ositos de goma</p>
+      <p class="precio">L 2.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="mix-de-golosinas-funny-300-gr_14036_1.jpg" alt="Golosinas" />
+      <p class="titulo">Funny Mix</p>
+      <p class="precio">L 10.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+    <div class="producto">
+      <img src="verano_portada-810x560.webp" alt="Golosinas" />
+      <p class="titulo">Goma de colores </p>
+      <p class="precio">L 1.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="mm-amarillo-caja-24-uds.jpg" alt="Golosinas" />
+      <p class="titulo">mm amarillo</p>
+      <p class="precio">L 20.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="saladix-panchitos.jpg" alt="Golosinas" />
+      <p class="titulo">Saladix </p>
+      <p class="precio">L 15.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="candes-1952997_640.jpg" alt="Golosinas" />
+      <p class="titulo">Goma de colores </p>
+      <p class="precio">L 1.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="cepill-todesanitar-base-color1248.jpg" alt="Aseo" />
+      <p class="titulo">Cepillo de baño </p>
+      <p class="precio">L 20.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="cepillo-tipo-planchaesquin1260.jpg" alt="Aseo" />
+      <p class="titulo">Cepillo de plancha </p>
+      <p class="precio">L 10.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="dulces-caramelos-gelatina-sobre-fondo-azul_392895-133023.jpg" alt="Golosinas" />
+      <p class="titulo">Largolinas  </p>
+      <p class="precio">L 1.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="gominolas-3.webp" alt="Golosinas" />
+      <p class="titulo">Gusanitos de goma </p>
+      <p class="precio">L 1.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images (2).jpg" alt="Golosinas" />
+      <p class="titulo">Fajillas de colores </p>
+      <p class="precio">L 2.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images (3).jpg" alt="Golosinas" />
+      <p class="titulo">Haribo X harrypotter </p>
+      <p class="precio">L 8.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images (10).jpg" alt="Aseo" />
+      <p class="titulo">Kit de aseo para piscina </p>
+      <p class="precio">L 250.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images (11).jpg" alt="Aseo" />
+      <p class="titulo">Balde de trapeador</p>
+      <p class="precio">L 60.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images (12).jpg" alt="Aseo" />
+      <p class="titulo">Cepillo deoba escoba</p>
+      <p class="precio">L 20.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images (13).jpg" alt="Aseo" />
+      <p class="titulo">Ambientador de frutas</p>
+      <p class="precio">L 50.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images.png" alt="Aseo" />
+      <p class="titulo">Trapeador  </p>
+      <p class="precio">L 70.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="Diseno-sin-titulo-1-300x300.jpg" alt="Golosinas" />
+      <p class="titulo">Deliket </p>
+      <p class="precio">L 10.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="Carrito.jpg" alt="Aseo" />
+      <p class="titulo">Carrito de aseo </p>
+      <p class="precio">L 1,200.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="03aaefd7-4964-40b9-8810-5071bf51144d-300x300.jpeg" alt="Golosinas" />
+      <p class="titulo">Gronchy </p>
+      <p class="precio">L 20.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="71ETLJw-EWL._UF1000,1000_QL80_.jpg" alt="Golosinas" />
+      <p class="titulo">Gomitas Vidal </p>
+      <p class="precio">L 20.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="98.webp" alt="Golosinas" />
+      <p class="titulo">Caramelos </p>
+      <p class="precio">L 3.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="descarga (1).jpg" alt="Comida" />
+      <p class="titulo">Aguacate </p>
+      <p class="precio">L 10.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="descarga (2).jpg" alt="Comida" />
+      <p class="titulo">Mango </p>
+      <p class="precio">L 20.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="descarga (3).jpg" alt="Comida" />
+      <p class="titulo">Sandia </p>
+      <p class="precio">L 30.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="descarga.jpg" alt="Comida" />
+      <p class="titulo">Papaya </p>
+      <p class="precio">L 40.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images (5).jpg" alt="Aseo" />
+      <p class="titulo">Paquete de cepillos de dientes </p>
+      <p class="precio">L 150.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images (21).jpg" alt="Comida" />
+      <p class="titulo">Arandanos X unida </p>
+      <p class="precio">L 2.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="images (20).jpg" alt="Comida" />
+      <p class="titulo">Manzana </p>
+      <p class="precio">L 15.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="images (6).jpg " alt="Aseo" />
+      <p class="titulo">Cepillo de dientes para niño </p>
+      <p class="precio">L 40.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="images (7).jpg" alt="Aseo" />
+      <p class="titulo">Pasta de dientes  </p>
+      <p class="precio">L 50.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="images (9).jpg" alt="Aseo" />
+      <p class="titulo">Asistin </p>
+      <p class="precio">L 110.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="images (14).jpg" alt="Aseo" />
+      <p class="titulo">Papel higienico </p>
+      <p class="precio">L 120.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="images (15).jpg" alt="Aseo" />
+      <p class="titulo">Limpia pizarra  </p>
+      <p class="precio">L 50.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="images (16).jpg" alt="Aseo" />
+      <p class="titulo">Limpia Ventana </p>
+      <p class="precio">L 30.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="images (17).jpg" alt="Aseo" />
+      <p class="titulo">Mata zancudo</p>
+      <p class="precio">L 20.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="images (18).jpg" alt="Aseo" />
+      <p class="titulo">Toallas Sanitarias </p>
+      <p class="precio">L 25.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+      <div class="producto">
+      <img src="images (19).jpg" alt="Comida" />
+      <p class="titulo">kiwi </p>
+      <p class="precio">L 20.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+       <div class="producto">
+      <img src="carne-roja.webp" alt="Aseo" />
+      <p class="titulo">Carne Roja </p>
+      <p class="precio">L 80.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+           <div class="producto">
+      <img src="images (27).jpg" alt="Aseo" />
+      <p class="titulo">Jabon Azufre</p>
+      <p class="precio">L 20.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+           <div class="producto">
+      <img src="images (26).jpg" alt="Aseo" />
+      <p class="titulo">Jabon Zote </p>
+      <p class="precio">L 14.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+           <div class="producto">
+      <img src="images (25).jpg" alt="Comida" />
+      <p class="titulo">Frijoles X 1L</p>
+      <p class="precio">L 12.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+           <div class="producto">
+      <img src="images (24).jpg" alt="Comida" />
+      <p class="titulo">Jamon de cerdo </p>
+      <p class="precio">L 35.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+           <div class="producto">
+      <img src="images (22).jpg" alt="Comida" />
+      <p class="titulo">Salchichon </p>
+      <p class="precio">L 30.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+           <div class="producto">
+      <img src="images (23).jpg" alt="Comida" />
+      <p class="titulo">Chorizo</p>
+      <p class="precio">L 40.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="images (4).jpg" alt="Golosinas" />
+      <p class="titulo">Gomitas Yummy</p>
+      <p class="precio">L 15.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="escoba.png" alt="Aseo" />
+      <p class="titulo">Escoba</p>
+      <p class="precio">L 30.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="161739_ISO_0_ES.jpg" alt="Golosinas" />
+      <p class="titulo">Gomitas Marcelo</p>
+      <p class="precio">L 16.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="beneficios-del-consumo-de-carnes-rojas_xl-820x394.jpg" alt="Comida" />
+      <p class="titulo">Carne Ahumada</p>
+      <p class="precio">L 60.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="gettyimages-174479270-612x612.jpg" alt="Comida" />
+      <p class="titulo">Carne</p>
+      <p class="precio">L 40.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="20128351.webp" alt="Aseo" />
+      <p class="titulo">Detergente Ariel</p>
+      <p class="precio">L 150.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="Abarrotes-Arroz-Arroz-Blanco_707517002083_1.webp" alt="Comida" />
+      <p class="titulo">Arroz Progreso </p>
+      <p class="precio">L 11.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="photo-1604246381427-b3280e9a1a63.jpg" alt="Golosinas" />
+      <p class="titulo">Pelotitas comestibles</p>
+      <p class="precio">L 2.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+
+     <div class="producto">
+      <img src="descarga (12).jpg" alt="Aseo" />
+      <p class="titulo">Detergente Rendidor</p>
+      <p class="precio">L 120.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="descarga (4).jpg" alt="Comida" />
+      <p class="titulo">Harina Doña blanca</p>
+      <p class="precio">L 12.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="descarga (5).jpg" alt="Comida" />
+      <p class="titulo">Harina de trigo</p>
+      <p class="precio">L 11.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="descarga (6).jpg" alt="Comida" />
+      <p class="titulo">Harina la rosa</p>
+      <p class="precio">L 11.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="descarga (7).jpg" alt="Comida" />
+      <p class="titulo">Azucar el cañal</p>
+      <p class="precio">L 12.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="descarga (8).jpg" alt="Aseo" />
+      <p class="titulo">Gillette</p>
+      <p class="precio">L 10.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="descarga (9).jpg" alt="Aseo" />
+      <p class="titulo">Detergente en polvo Ariel</p>
+      <p class="precio">L 130.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="descarga (10).jpg" alt="Aseo" />
+      <p class="titulo">Detergente en polvo Ace</p>
+      <p class="precio">L 170.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+     <div class="producto">
+      <img src="descarga (11).jpg" alt="Aseo" />
+      <p class="titulo">Detergente en polvo ala</p>
+      <p class="precio">L 150.00</p>
+      <button class="btn-carrito">Añadir al carrito</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+    <section id="carrito">
+  <h2>Carrito de Compras</h2>
+  <ul id="lista-carrito"></ul>
+  <p>Total: L <span id="total">0</span></p>
+</section>
+
+
+          <button class="btn btn-primary btn-agregar" data-nombre="Producto 2" data-precio="45">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+    <!-- Añade más productos si quieres -->
+  </div>
+</div>
+
+<!-- Notificación -->
+<div class="alert alert-success alert-notify d-none" role="alert" id="alerta-carrito">
+  Producto añadido al carrito 🛒
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const btnsAgregar = document.querySelectorAll('.btn-agregar');
+  const contadorSpan = document.getElementById('contador');
+  const alerta = document.getElementById('alerta-carrito');
+  let contador = 0;
+
+  btnsAgregar.forEach(btn => {
+    btn.addEventListener('click', () => {
+      contador++;
+      contadorSpan.textContent = contador;
+      mostrarNotificacion();
+    });
+  });
+
+  function mostrarNotificacion() {
+    alerta.classList.remove('d-none');
+    setTimeout(() => {
+      alerta.classList.add('d-none');
+    }, 2000);
+  }
+</script>
+
+</body>
+</html>

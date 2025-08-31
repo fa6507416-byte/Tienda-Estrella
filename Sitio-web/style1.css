@@ -1,0 +1,38 @@
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fefefe;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.precio {
+  color: #009688;
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.btn-carrito, .btn-comprar {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-carrito {
+  background-color: #fbc02d;
+  color: #000;
+}
+
+.btn-comprar {
+  background-color: #009688;
+  color: #fff;
+}

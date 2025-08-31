@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Estrella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0d0d0d;
+      font-family:  'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-box img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .login-box h2 {
+      color: #ff0000;
+      margin-bottom: 30px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: #333;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .login-box input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background: #ff0000;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-box input[type="submit"]:hover {
+      background: #cc0000;
+    }
+
+    .login-box p {
+      color: #aaa;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .crear-cuenta {
+      margin-top: 20px;
+    }
+
+    .crear-cuenta a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #444;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+
+    .crear-cuenta a:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="estrella blanca.png" alt="Logo Estrella" />
+    <h2>Iniciar Sesión</h2>
+
+    <form onsubmit="login(event)">
+      <input type="text" id="usuario" placeholder="Usuario" required>
+      <input type="password" id="clave" placeholder="Contraseña" required>
+      <input type="submit" value="Entrar">
+    </form>
+
+    <p>¿Olvidaste tu contraseña?</p>
+
+    <div class="crear-cuenta">
+      <p>¿No tienes una cuenta?</p>
+      <a href="registro.html">Crear una cuenta</a>
+    </div>
+  </div>
+
+  <script>
+    function login(e) {
+      e.preventDefault();
+
+      const usuario = document.getElementById("usuario").value;
+      const clave = document.getElementById("clave").value;
+
+      if (usuario === "admin" && clave === "1234") {
+        window.location.href = "inicio1.html";
+      } else {
+        alert("Usuario o contraseña incorrectos");
+      }
+    }
+  </script>
+
+</body>
+</html>

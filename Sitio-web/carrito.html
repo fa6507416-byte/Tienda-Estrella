@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de Compras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 60px;
+    }
+    .container {
+      max-width: 700px;
+    }
+    .alert {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tienda Estrella Roja</a>
+      <button class="btn btn-outline-light position-relative" onclick="mostrarNotificacion()">
+        <i class="bi bi-cart-fill"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="contador">
+          0
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2 class="mb-4">Carrito de Compras</h2>
+
+    <ul class="list-group mb-3" id="lista-carrito">
+      <!-- Los productos agregados aparecerán aquí -->
+    </ul>
+
+    <p class="fs-5 fw-bold">Total: L <span id="total">0.00</span></p>
+  </div>
+
+  <!-- Notificación -->
+  <div class="alert alert-success alert-dismissible fade show d-none" role="alert" id="alerta-carrito">
+    Producto añadido al carrito 🛒
+    <button type="button" class="btn-close" onclick="cerrarNotificacion()"></button>
+  </div>
+
+  <!-- Bootstrap JS y Script de carrito -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    let contador = 0;
+    let total = 0;
+
+    // Simula productos por ahora
+    const productoEjemplo = {
+      nombre: 'Producto aleatorio',
+      precio: 25.00
+    };
+
+    function mostrarNotificacion() {
+      contador++;
+      total += productoEjemplo.precio;
+
+      // Añadir al listado
+      const li = document.createElement('li');
+      li.className = 'list-group-item d-flex justify-content-between align-items-center';
+      li.innerHTML = `${productoEjemplo.nombre} <span>L ${productoEjemplo.precio.toFixed(2)}</span>`;
+      document.getElementById('lista-carrito').appendChild(li);
+
+      // Actualizar contador y total
+      document.getElementById('contador').innerText = contador;
+      document.getElementById('total').innerText = total.toFixed(2);
+
+      // Mostrar notificación
+      const alerta = document.getElementById('alerta-carrito');
+      alerta.classList.remove('d-none');
+      setTimeout(() => {
+        alerta.classList.add('d-none');
+      }, 2000);
+    }
+
+    function cerrarNotificacion() {
+      document.getElementById('alerta-carrito').classList.add('d-none');
+    }
+  </script>
+</body>
+</html>
